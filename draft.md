@@ -17,3 +17,5 @@
   - e.g. based on the tumor size, classify if the cancer is malignant or benign
   - For classification, a linear function doesn't work, we need a threshold to say if the predicted value is one label or the other
   - The decision boundary of the logistic regression is when the threshold meets the model function. The left side of the boundary will be classified as one label and the right side, the other one.
+- Logistic Regression
+  - A classification algorithm can use a logistic function, also called the sigmoid function. A function with an S-shape that outputs between 0 and 1
