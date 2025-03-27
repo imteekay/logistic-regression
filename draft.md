@@ -32,7 +32,14 @@ A classification algorithm can use a logistic function, also called the sigmoid 
 
 ![](./images/002.png)
 
-The logistic regression algorithm computes the linear combination z = xw + b and pass it to the sigmoid activation function
+The logistic regression algorithm computes the linear combination z = xw + b and pass it to the sigmoid activation function.
+
+In numpy, we can use the `exp` function to compute the exponential of a value or an array:
+
+```python
+np.exp(1) # 2.718281828459045
+np.exp(np.array([1, 2, 3])) # [2.72, 7.39, 20.09]
+```
 
 ![](./images/003.png)
 
