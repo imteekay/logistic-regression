@@ -22,6 +22,8 @@
 
 ## Logistic Regression
 
+The classification prediction should output 0 or 1. The sigmoid or logistic function can be used to map all input values to values between 0 and 1
+
 The logistic function fits the data and build the curve and the algorithm outputs the threshold to separate the labels
 
 ![](./images/001.png)
