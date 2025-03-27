@@ -41,6 +41,24 @@ np.exp(1) # 2.718281828459045
 np.exp(np.array([1, 2, 3])) # [2.72, 7.39, 20.09]
 ```
 
+The sigmoid function computes the exponential of the negative value of `z`:
+
+```python
+def sigmoid(z):
+    """
+    Compute the sigmoid of z
+
+    Args:
+        z (ndarray): A scalar, numpy array of any size.
+
+    Returns:
+        g (ndarray): sigmoid(z), with the same shape as z
+         
+    """
+
+    return 1 / (1 + np.exp(-z))
+```
+
 ![](./images/003.png)
 
 The interpretation of the logistic regression output
