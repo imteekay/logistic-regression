@@ -43,3 +43,18 @@ The interpretation of the logistic regression output
   - y = 1 for malignant
   - f(x) = 0.7 -> 70% chance that y = 1 (cancer is malignant)
 - P(y = 0) + P(y = 1) = 1 (100%)
+
+## Decision Boundary
+
+![](./images/004.png)
+
+- For a sigmoid activation function, the threshold is 0.5
+  - For Z >= 0, Y = 1
+  - For Z < 0, Y = 0
+
+![](./images/005.png)
+
+- A classification problem where it has two features x1 and x2
+  - decision boundary will be a line crossing the graph where it separates the y = 0 and y = 1
+- Non-linear decision boundary
+  - It can be a polynomial function and not a straight line: circunference, ellipse, cluster/shape
