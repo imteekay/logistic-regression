@@ -85,3 +85,11 @@ The interpretation of the logistic regression output
   - decision boundary will be a line crossing the graph where it separates the y = 0 and y = 1
 - Non-linear decision boundary
   - It can be a polynomial function and not a straight line: circunference, ellipse, cluster/shape
+
+## Cost Function
+
+The cost function in relation to the `w` and `b` forms a non-convex function. But if we try to use gradient descent, there are many "local minima".
+
+![](./images/006.png)
+
+The squared error cost function doesn't work for logistic regression. The non-linear nature of the model results in  non-convex cost function with many potential local minima.
