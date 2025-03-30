@@ -141,3 +141,5 @@ $$
   &=  -\log\left(f_{\mathbf{w},b}\left( \mathbf{x}^{(i)} \right) \right)
 \end{align}
 $$
+
+Based on the value of 𝑦, it selects the appropriate log term in the loss function.
