@@ -95,3 +95,22 @@ The cost function in relation to the `w` and `b` forms a non-convex function. Bu
 The squared error cost function doesn't work for logistic regression. It isn't as smooth as it's for linear regression. The non-linear nature of the model results in  non-convex cost function with many potential local minima.
 
 Logistic regression requires a cost function more suitable to its non-linear nature.
+
+- **Loss** is a measure of the difference of a single example to its target value
+- **Cost** is a measure of the losses over the training set
+
+This is defined: 
+
+* $loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), y^{(i)})$ is the cost for a single data point, which is:
+
+\begin{equation}
+  loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), y^{(i)}) = \begin{cases}
+    - \log\left(f_{\mathbf{w},b}\left( \mathbf{x}^{(i)} \right) \right) & \text{if $y^{(i)}=1$}\\
+    - \log \left( 1 - f_{\mathbf{w},b}\left( \mathbf{x}^{(i)} \right) \right) & \text{if $y^{(i)}=0$}
+  \end{cases}
+\end{equation}
+
+
+*  $f_{\mathbf{w},b}(\mathbf{x}^{(i)})$ is the model's prediction, while $y^{(i)}$ is the target value.
+
+*  $f_{\mathbf{w},b}(\mathbf{x}^{(i)}) = g(\mathbf{w} \cdot\mathbf{x}^{(i)}+b)$ where function $g$ is the sigmoid function.
