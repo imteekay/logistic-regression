@@ -206,3 +206,5 @@ def compute_cost(X, y, w, b):
     
     return cost
 ```
+
+For a different `w` and `b`, the cost function will be smaller and the model function will fit better the data, in other words, the decision boundary will be plotted in a better position where it divides the binary classification better.
