@@ -208,3 +208,11 @@ def compute_cost(X, y, w, b):
 ```
 
 For a different `w` and `b`, the cost function will be smaller and the model function will fit better the data, in other words, the decision boundary will be plotted in a better position where it divides the binary classification better.
+
+## Gradient Descent for Logistic Regression
+
+![](./images/008.png)
+
+The updates of `w` and `b` are similar to the updates in linear regression.
+
+But actually, what differentiate them is the function `f`. In linear regression, we use just a linear combination. While in logistic regression we compute the logistic/sigmoid function after the linear combination.
