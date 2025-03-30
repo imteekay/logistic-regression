@@ -143,3 +143,7 @@ $$
 $$
 
 Based on the value of 𝑦, it selects the appropriate log term in the loss function.
+
+The cost function computes the loss of all training examples. It's the sum of loss of all training examples over the number of traning examples `m`
+
+$$ J(\mathbf{w},b) = \frac{1}{m} \sum_{i=0}^{m-1} \left[ loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), y^{(i)}) \right] \tag{1}$$
