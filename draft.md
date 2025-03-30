@@ -147,3 +147,38 @@ Based on the value of 𝑦, it selects the appropriate log term in the loss func
 The cost function computes the loss of all training examples. It's the sum of loss of all training examples over the number of traning examples `m`
 
 $$ J(\mathbf{w},b) = \frac{1}{m} \sum_{i=0}^{m-1} \left[ loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), y^{(i)}) \right] \tag{1}$$
+
+Here's the entire implementation
+
+```python
+def compute_logistic_cost(X, y, w, b):
+    """
+    Computes cost
+
+    Args:
+      X (ndarray (m,n)): Data, m examples with n features
+      y (ndarray (m,)) : target values
+      w (ndarray (n,)) : model parameters  
+      b (scalar)       : model parameter
+      
+    Returns:
+      cost (scalar): cost
+    """
+
+    m = X.shape[0]
+    cost = 0.0
+
+    for i in range(m):
+        z_i = np.dot(X[i], w) + b
+        f_wb_i = sigmoid(z_i)
+        cost +=  -y[i] * np.log(f_wb_i) - (1 - y[i]) * np.log(1 - f_wb_i)
+             
+    cost = cost / m
+    return cost
+```
+
+- loop through all the m training examples
+- compute the linear combination: x * w + b
+- compute the sigmoid/logistic function
+- compute the cost: sum of all losses over `m` training examples. The average of losses
+
