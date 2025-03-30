@@ -92,4 +92,6 @@ The cost function in relation to the `w` and `b` forms a non-convex function. Bu
 
 ![](./images/006.png)
 
-The squared error cost function doesn't work for logistic regression. The non-linear nature of the model results in  non-convex cost function with many potential local minima.
+The squared error cost function doesn't work for logistic regression. It isn't as smooth as it's for linear regression. The non-linear nature of the model results in  non-convex cost function with many potential local minima.
+
+Logistic regression requires a cost function more suitable to its non-linear nature.
