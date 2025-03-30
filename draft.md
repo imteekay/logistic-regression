@@ -182,3 +182,27 @@ def compute_logistic_cost(X, y, w, b):
 - compute the sigmoid/logistic function
 - compute the cost: sum of all losses over `m` training examples. The average of losses
 
+The vectorized version
+
+```python
+def compute_cost(X, y, w, b):
+    """
+    Computes cost
+
+    Args:
+      X (ndarray (m,n)): Data, m examples with n features
+      y (ndarray (m,)) : target values
+      w (ndarray (n,)) : model parameters  
+      b (scalar)       : model parameter
+      
+    Returns:
+      cost (scalar): cost
+    """
+
+    m = X.shape[0]
+    Z = np.dot(X, w) + b
+    A = sigmoid(Z)
+    cost = sum(-y * np.log(A) - (1 - y) * np.log(1 - A)) / m
+    
+    return cost
+```
