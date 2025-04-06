@@ -84,7 +84,7 @@ The interpretation of the logistic regression output
 - A classification problem where it has two features x1 and x2
   - decision boundary will be a line crossing the graph where it separates the y = 0 and y = 1
 - Non-linear decision boundary
-  - It can be a polynomial function and not a straight line: circunference, ellipse, cluster/shape
+  - It can be a polynomial function and not a straight line: circumference, ellipse, cluster/shape
 
 ## Cost Function
 
