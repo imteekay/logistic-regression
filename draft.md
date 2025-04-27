@@ -153,19 +153,6 @@ Here's the entire implementation
 
 ```python
 def compute_logistic_cost(X, y, w, b):
-    """
-    Computes cost
-
-    Args:
-      X (ndarray (m,n)): Data, m examples with n features
-      y (ndarray (m,)) : target values
-      w (ndarray (n,)) : model parameters  
-      b (scalar)       : model parameter
-      
-    Returns:
-      cost (scalar): cost
-    """
-
     m = X.shape[0]
     cost = 0.0
 
